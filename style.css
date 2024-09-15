@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*,
+html {
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+
+}
+
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 95vh;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background: #d5bdaf;
+    background-image: repeating-linear-gradient(90deg, hsla(196, 0%, 79%, 0.06) 0px, hsla(196, 0%, 79%, 0.06) 1px, transparent 1px, transparent 96px), repeating-linear-gradient(0deg, hsla(196, 0%, 79%, 0.06) 0px, hsla(196, 0%, 79%, 0.06) 1px, transparent 1px, transparent 96px), repeating-linear-gradient(0deg, hsla(196, 0%, 79%, 0.09) 0px, hsla(196, 0%, 79%, 0.09) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(90deg, hsla(196, 0%, 79%, 0.09) 0px, hsla(196, 0%, 79%, 0.09) 1px, transparent 1px, transparent 12px), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+body .count{
+  display: flex;
+  align-items: center; 
+  position: absolute;
+  top:10px;
+  left:30px;
+  font-size:20px;
+}
+
+body .count .number{
+    width:50px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:100%;
+    border:3px solid black;
+    margin-right:15px;
+}
+
+
+body .cartoon-body {
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:30px; 
+    height:650px;
+}
+
+body .cartoon-body .head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .cartoon-body .head {
+    width: 210px;
+    height: 300px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -30px;
+    z-index: 500;
+}
+
+body .cartoon-body .head .hair {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    background-color: #002337;
+    border-top-right-radius: 0px;
+}
+
+body .cartoon-body .head .face {
+    width: 100%;
+    height: 240px;
+    border-radius: 100%;
+    z-index: 100;
+    position: relative;
+    background: #f6c29d;
+    margin-top: -160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+body .cartoon-body .head .face .eyes {
+    display: flex;
+    align-items: center;
+}
+
+body .cartoon-body .head .face .eyebrows {
+    display: flex;
+    margin-top: 20px;
+}
+
+body .cartoon-body .head .face .eyes {
+    display: flex;
+    margin-top: 10px;
+}
+
+body .cartoon-body .head .face .eyebrows div {
+    width: 35px;
+    height: 15px;
+    border-radius: 30px;
+    background: #002337;
+    margin: 0px 3px;
+}
+
+
+body .cartoon-body .head .face .eyes div {
+    width: 18px;
+    height: 25px;
+    border-radius: 60px;
+    background: #002337;
+    margin: 0px 10px;
+}
+
+body .cartoon-body .head .face .mouth {
+    width: 150px;
+    height: 75px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin-top: 15px;
+    background: white;
+}
+
+
+body .cartoon-body .head .ears div {
+    position: absolute;
+    left: -10px;
+    top: 150px;
+    width: 30px;
+    height: 25px;
+    background-color: #ed907d;
+    z-index: 100;
+    border-radius: 100px;
+}
+
+body .cartoon-body .head .ears .right {
+    right: -10px;
+    left: unset;
+}
+
+
+body .cartoon-body .head .neck {
+    height: 70px;
+    width: 50px;
+    margin-top: -10px;
+    background: #f6c29d;
+    overflow: hidden;
+    position: relative;
+    z-index: 00;
+    border-radius: 100px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+
+body .cartoon-body .head .neck div {
+    height: 30px;
+    background: #ed907d;
+    width: 80px;
+    margin-top: -10px;
+    margin-left: -20px;
+    border-radius: 100%;
+}
+
+
+body .cartoon-body .body {
+    width: 200px;
+    height: 250px;
+    border-radius: 400px;
+    background: #000814;
+    margin-top: -5px;
+    position: relative;
+    z-index: 100;
+}
+
+
+body .cartoon-body .body .arms .left {
+    width: 40px;
+    height: 150px;
+    position: absolute;
+    left: -40px;
+    top: 30px;
+    background: #f6c29d;
+}
+
+
+body .cartoon-body .body .arms .left::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    border-top-left-radius: 300px;
+    width: 110px;
+    height: 60px;
+    background: #000;
+    z-index: 1;
+}
+
+
+
+body .cartoon-body .body .arms .left::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    bottom: -30px;
+    left: -20px;
+    background: #f6c29d;
+}
+
+
+
+
+body .cartoon-body .body .arms .right {
+    width: 40px;
+    height: 150px;
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    background: #f6c29d;
+}
+
+
+body .cartoon-body .body .arms .right::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    border-top-right-radius: 300px;
+    width: 110px;
+    height: 60px;
+    background: #000;
+    z-index: 0;
+}
+
+
+
+body .cartoon-body .body .arms .right::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: #f6c29d;
+    bottom: -30px;
+    left: -20px;
+}
+
+
+
+body .cartoon-body .body .shirt {
+    width: 100%;
+    height: 130px;
+    background: #ffff;
+    border-top-left-radius: 100%;
+    position: relative;
+    z-index: 1000;
+    border-top-right-radius: 100%;
+}
+
+
+
+
+body .cartoon-body .body .jeans {
+    height: 50px;
+    width: 100%;
+    border-top: 8px solid #41230e;
+    position: relative;
+}
+
+
+body .cartoon-body .body .jeans::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(53, 49, 49);
+    left: 100px;
+    top: 20px;
+}
+
+
+
+
+
+body .cartoon-body .body .legs {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+body .cartoon-body .body .legs .right,
+body .cartoon-body .body .legs .left {
+    width: 70px;
+    height: 120px;
+    background-color: #000814;
+    position: relative;
+    margin: 0px 3px;
+}
+
+
+
+
+body .cartoon-body .body .legs .left {
+    z-index: 0;
+}
+
+
+
+body .cartoon-body .body .legs .left::after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    bottom: -50px;
+    width: 100px;
+    height: 60px;
+    background-color: #432818;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+}
+
+
+
+body .cartoon-body .body .legs .right::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    width: 100px;
+    height: 60px;
+    background-color: #432818;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+}
+
+
+body .cartoon-body .body .legs .jb {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    background-color: #41230e;
+}
+
+
+
+body .colors-theme {
+    position: fixed;
+    left: 20px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    list-style: none;
+    padding-right: 30px;
+}
+
+body .colors-theme li {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: all 1s ease-in-out;
+    border: 4px solid #ffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+body .colors-theme li.active {
+    transform: scale(1.4);
+}
+
+
+body ul .c1 {
+    background-color: #432818;
+}
+
+body ul .c2 {
+    background-color: #c1121f;
+}
+
+body ul .c3 {
+    background-color: rgb(18, 83, 18);
+}
+
+body ul .c4 {
+    background-color: rgb(22, 22, 167);
+}
+
+body ul .c5 {
+    background-color: orangered;
+}
+
+
+/***Red theme */
+
+body .cartoon-body.red .head .eyes div,
+body .cartoon-body.red .head .eyebrows div {
+    background: #4d391b;
+}
+
+
+body .cartoon-body.red .head .hair {
+    border-top-left-radius: 0px;
+    position: relative;
+    background: #4d391b;
+}
+
+body .cartoon-body.red .head .hair::after {
+    content: "";
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    width: 5px;
+    height: 35px;
+    background-color: #ffff;
+}
+
+body .cartoon-body.red .head .hair::before {
+    content: "";
+    position: absolute;
+    right: 55px;
+    top: 0px;
+    width: 5px;
+    height: 35px;
+    background-color: #ffff;
+}
+
+body .cartoon-body.red .body .legs .left::after,
+body .cartoon-body.red .body .legs .right::after {
+    background-color: #01161e;
+}
+
+
+body .cartoon-body.red .body .legs .jb {
+    background-color: #25252b;
+}
+
+
+body .cartoon-body.red .body .jeans {
+    border-top: 8px solid #25252b;
+}
+
+body .cartoon-body.red .body .shirt,
+body .cartoon-body.red .body .arms .left::after,
+body .cartoon-body.red .body .arms .right::after {
+    background: #c1121f;
+}
